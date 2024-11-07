@@ -1,11 +1,14 @@
-import Counter from "./Counter"
+import React from "react";
+import Counter from "./Counter";
 
-import React from 'react'
-
-function App() {
-  return (
-    <main>App</main>
-  )
+function App(){
+    return(
+        <main className="container">
+            <Counter start ={10}/>
+            <Counter/>
+            <Counter start = "50"/>
+        </main>
+    );
 }
 
 export default App;

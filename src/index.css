@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.container{
+    @apply flex flex-col items-center justify-center h-screen gap-2;
+}
 .btn{
-    @apply px-2 bg-blue-300 rounded flex;
+    @apply py-2 px-4 bg-blue-500 text-white rounded ;
+}
+
+.red{
+    @apply bg-red-500 !important;
 }
