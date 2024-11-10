@@ -1,8 +1,34 @@
-# React + Vite
+ #Counter(React)   
+ ## About
+ This is a simple counter app built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Features
+ - Simple Counter
+ - Step Counter
+ - Danger Counter
 
-Currently, two official plugins are available:
+## Customization
+- You can customize the color of the button by adding the className `red` to the button.
+- You can customize the text color of the button by adding the className `text-white` to the button.
+- You can customize the background color of the button by adding the className `bg-blue-500` to the button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
+![alt text](Counter-react.PNG)
+
+## Tech Stack
+- HTML
+- CSS   
+- React Js              
+
+## Use
+1. Clone the repository
+2. Go to the directory
+3. Run the command `npm install` to install the dependencies
+4. Run the command `npm run dev` to start the application
+5.  Open the browser and go to `localhost:3000` to view the application 
+
+## License
+    MIT License         
+            
+ 
+ 
