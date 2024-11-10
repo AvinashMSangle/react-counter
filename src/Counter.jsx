@@ -1,19 +1,23 @@
 import {useState} from "react";
 
- function Counter({start=0}){
-    let [Counter, setCounter] = useState(start);
+ function Counter({start=0, step=1,danger = false}) {
+    let [Counter, setCounter] = useState(+start);
+
     const handlClick = (type) => {
         if(type === "minus"){
-        setCounter(Counter - 1);
-        return}
-        setCounter(Counter + 1)
+        setCounter(Counter - step);
+        return;
+    }
+        setCounter(Counter + step);
     };
 
     return (
-        <div className=" flex items-center gap-4 border p-1">
-            <button className="btn" onClick={() => handlClick("minus")}>-</button>
+        <div className=" flex items-center gap-5 border-4 p-3">
+            <button 
+            className={`btn ${danger && "red"}`}
+            onClick={() => handlClick("minus")}>-</button>
             <p className="text-4xl font-bold">{Counter}</p>
-            <button className="btn red" onClick={() => handlClick()}>+</button>
+            <button className={`btn ${danger && "red"}`} onClick={() => handlClick()}>+</button>
         </div>
     );
     
